@@ -1,0 +1,401 @@
+/*! reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*! reset end*/
+:root{
+    --main-color: rgb(38, 137, 110);
+
+}
+
+
+
+/*! Header start*/
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+   
+  
+}
+    header .title{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    header .title h1{
+        color: gray;
+    }
+    header .title h1 span{
+        color: var(--main-color);
+    }
+    header .title a{
+        font-size: 50px;
+        color: var(--main-color);
+    }
+
+    /*! direct start*/
+    header nav ul{
+        display: flex;
+        gap: 20px;
+        
+    }
+    header nav ul a{
+        text-decoration: none;
+        color: gray;
+        
+        
+    }
+    header nav ul a:hover{
+        color: var(--main-color);
+        transform: scale(1.5);
+    }
+    header nav ul a i{
+        color: var(--main-color);
+    }
+    /*! direct end*/
+
+/*! Header end*/
+
+
+
+/*! section start*/
+section{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    padding: 15px;
+}
+section .sec-left{
+    text-align: center;
+    flex: 1;
+   
+
+}
+section .images{
+    flex: 1;
+    width: 200px;
+    border-radius: 30%;
+    
+   
+}
+section .sec-left h1{
+    font-size: 35px;
+    color: gray;
+    margin-bottom: 25px;
+}
+section .sec-left h1 span{
+    color: var(--main-color);
+}
+section .sec-left p{
+    font-size: 16px;
+}
+section button{
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+section button:hover{
+    background-color: gray;
+    transition: 500ms;
+    transform: scale(1.2);
+}
+
+/*! section end*/
+/*!-why udemıg start*/
+.course-info{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(48, 137, 145, 0.55);
+    padding: 15px;
+    position: relative;
+    
+    
+    
+    
+}
+.course-info .p-sec h1{
+    background-color: var(--main-color);
+    padding: 20px;
+    width: 60%;
+    position: absolute;
+    top: -20px;
+    border-bottom-right-radius: 60px;
+    color: blue
+
+}
+.course-info .p-sec h1:hover{
+    transform: scale(1.2);
+    color: white;
+}
+.course-info .p-sec p{
+    font-size: 20px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.course-info .p-sec button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--main-color);
+    color: blue;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+.course-info .p-sec button:hover{
+    transform: scale(1.2);
+    color: white;
+   
+}
+.p-sec, .img-sec{
+    flex: 1;
+    width: 200px;
+}
+.img-sec img{
+    width: 55vh;
+    border-radius: 50%;
+
+}
+
+
+/*!-why udemıg end*/
+
+/*courses start*/
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+    margin-left: 20px;
+    
+
+    
+}
+.box .box-container .boxes{
+    border: 1px solid grey;
+    border-radius: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+.box .box-container .boxes:hover{
+    transform: scale(1.1);
+}   
+    
+
+#learn{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#more{
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.box-container .boxes img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.box-container .boxes p{
+    text-align: center;
+}
+
+
+
+aside {
+    background-color: white;
+    width: 280px;
+    max-height: 600px;
+    border-radius: 15%;
+    box-shadow: 0 0 20px rgb(0, 255, 255);
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;  
+   
+   
+
+}
+
+
+.dark input, textarea{
+    font-size: 20px;
+    
+    
+}
+.dark h3{
+    font-size: 30px;
+    background-color: aqua;
+    border-radius: 30%;
+}
+input{
+    padding: 10px;
+
+}
+textarea{
+    padding: 5px;
+    margin: 5px;
+}
+aside .sidebar .quote input , aside .sidebar .quote textarea{
+    width: 90%;
+    border-radius: 20%;
+}
+button.button1{
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20%;
+    
+}
+button.button1:hover{
+    color: blue;
+    background-color: aqua;
+}
+/*! Footer start*/
+footer{
+    padding: 20px;
+    margin-top: 100px;
+    border-top: 1px solid var(--main-color);
+}
+footer .footer-start{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+footer .footer-start .footer-area{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+footer .footer-start .footer-area:hover{
+    transform: scale(1.2);
+}
+footer .footer-start .footer-area a{
+    text-decoration: none;
+    color: gray;
+}
+footer .bottom{
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid var(--main-color);
+    padding: 20px;
+
+
+}
+
+/*! Footer end*/
+
+@media (max-width: 391px ) {
+   .box{
+    grid-template-columns: repeat(1,1fr);
+   }
+   footer h2{
+    font-size: 20px
+   }
+   header nav ul{
+    display: block;
+   }
+   .sec-left, .course-info{
+    display: block;
+    
+   }
+
+
+
+
+}
+/*@media (max-width: 1700px) {
+}
+@media (max-width: 1200px) {
+    :root {
+        --h1-font: 4rem;
+        --h2-font: 2rem;
+        --p-font: 15px;
+      }
+    }
+@media (max-width: 1050px) {
+
+    .navbar {
+        position: absolute;
+        background-color: var(--bg-color);
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 100%;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+      }
+      .navbar a {
+        color: #979797;
+        font-size: 2.2rem;
+        font-weight: 400;
+      }
+      .navbar open {
+        left: 0;
+      }
+      #menu-btn {
+        display: block;
+      }
+      .newsletter-content form{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        gap: 1rem;
+      }
+      .newsletter-content{
+        grid-template-columns: repeat(1,1fr);
+      }
+}
+@media (max-width: 740px) { 
+    .holiday{
+        grid-template-columns: 1fr;
+    }
+    .culture{
+      grid-template-columns: repeat(1,1fr);
+    }
+  
+    .newsletter-content form{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
